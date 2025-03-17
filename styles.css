@@ -253,15 +253,16 @@ footer a:hover {
 
 /* Responsive Styles */
 
-/* For tablets and smaller screens */
+* Mobile First */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 20px;
+    h1 {
+        font-size: 28px;
     }
 
     nav ul {
         flex-direction: column;
         gap: 10px;
+        text-align: center;
     }
 
     nav a {
@@ -269,45 +270,37 @@ footer a:hover {
     }
 
     section {
-        padding: 15px;
+        padding: 30px;
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
-    h3 {
-        font-size: 18px;
-    }
-
-    footer {
-        font-size: 14px;
+    p {
+        font-size: 16px;
     }
 }
 
-/* For mobile screens */
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 18px;
+/* For Larger Screens / Laptops */
+@media (min-width: 769px) {
+    h1 {
+        font-size: 36px;
     }
 
-    nav a {
-        font-size: 14px;
+    nav ul {
+        flex-direction: row;
     }
 
     section {
-        padding: 10px;
+        padding: 60px;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 32px;
     }
 
-    h3 {
-        font-size: 16px;
-    }
-
-    footer {
-        font-size: 12px;
+    p {
+        font-size: 18px;
     }
 }
